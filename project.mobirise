@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "name": "Site 2024-01-12 15:44",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.8",
+    "siteFonts": [],
+    "imageResize": true,
+    "usedWebp": true,
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://sycnswap.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://sycnswap.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "favicon": false,
+    "mbrsiteDomain": "p9pkf5zfsf",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.8"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "SyncSwap™ | Home Official Site",
+        "meta_descr": "WebSyncSwap is a platform for seamless and efficient trading on zk rollups, a scaling solution for Ethereum. It offers low gas costs, high capital efficiency, and community ownership with zero-knowledge security.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://syncswap.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/syncswap.png\" alt=\"Syncswap\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "u18SMWdANx",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b><a href=\"https://sycnswap.github.io/\" class=\"text-primary\">SyncSwap</a>™ | Home Official Site</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b><a href=\"https://syncswap.xyz/intro\" class=\"text-primary\">SyncSwap</a>: The Decentralized Exchange Redefining Trading on zkSync</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">SyncSwap is a decentralized exchange that operates on the zkSync layer 2 scaling solution. It is designed to provide users with a fast, efficient, and secure way to trade cryptocurrencies without the need for intermediaries. SyncSwap is built on a unique technology called zkRollups, which allows it to process a large number of transactions off-chain, and then batch them together before submitting them to the Ethereum blockchain.\n<br>\n<br><a href=\"https://sycnswap.github.io/\" class=\"text-primary\">SyncSwap</a> is designed to be user-friendly and accessible to users with limited technical knowledge. It is also optimized for mobile devices, which means that users can easily access the platform from their smartphones.\n<br>How Does SyncSwap Work?\n<br>SyncSwap is built on the zkSync layer 2 scaling solution, which is designed to improve transaction speed and reduce the cost of transactions. The zkSync solution is built on a technology called zkRollups, which is a type of off-chain scaling solution that allows for the processing of a large number of transactions off-chain.\n<br>\n<br>When a user makes a trade on SyncSwap, the trade is first processed off-chain on the zkSync network. This means that the transaction is processed quickly and efficiently, and the user does not have to pay the high gas fees that are associated with transactions on the Ethereum blockchain.\n<br>\n<br>Once the trade is processed off-chain, it is then batched together with other transactions before being submitted to the Ethereum blockchain. This helps to reduce congestion on the Ethereum network and ensures that the user's transaction is processed quickly and efficiently.\n<br>\n<br>SyncSwap also uses a unique token swap mechanism that is designed to provide users with the best possible exchange rate. The platform supports a wide range of cryptocurrencies, which means that users can easily swap one cryptocurrency for another without the need for intermediaries.\n<br>Unique Features and Benefits of SyncSwap\n<br>SyncSwap offers a range of unique features and benefits that set it apart from other decentralized exchanges. Some of these features and benefits include:\n<br>\n<br>1. Fast Transaction Speed: SyncSwap is designed to be fast and efficient, which means that it can process a large number of transactions quickly and efficiently. This is achieved through the use of the zkSync layer 2 scaling solution, which is designed to improve transaction speed and reduce the cost of transactions.\n<br>\n<br>2. Low Transaction Fees: SyncSwap is designed to be cost-effective, which means that users can make trades without having to pay high gas fees. This is achieved through the use of the zkSync layer 2 scaling solution, which allows for the processing of a large number of transactions off-chain.\n<br>\n<br>3. User-Friendly Interface: SyncSwap is designed to be user-friendly and accessible to users with limited technical knowledge. It is also optimized for mobile devices, which means that users can easily access the platform from their smartphones.\n<br>\n<br>4. Secure: SyncSwap is designed to be secure, which means that it uses advanced security measures to protect user funds. The platform uses a unique token swap mechanism that is designed to provide users with the best possible exchange rate.\n<br>\n<br>5. Support for a Wide Range of Cryptocurrencies: SyncSwap supports a wide range of cryptocurrencies, which means that users can easily swap one cryptocurrency for another without the need for intermediaries.\n<br>\n<br>6. Decentralized: SyncSwap is a decentralized exchange, which means that it operates without the need for intermediaries. This ensures that users have full control over their funds and that there is no central authority that can manipulate the market.\n<br>\n<br>\n<br>\n<br>Conclusion\n<br>SyncSwap represents a significant step forward in the world of cross-chain asset swapping, providing users with a seamless and efficient solution for navigating the decentralized finance landscape. With its advanced technology, enhanced liquidity, user-friendly interface, and robust security measures, SyncSwap is poised to reshape the way users interact with different blockchains. As the ecosystem continues to expand and partnerships grow, SyncSwap will unlock new possibilities, allowing users to fully capitalize on the potential of decentralized finance. Whether it's asset diversification, yield farming optimization, or exploring new investment opportunities, SyncSwap offers a comprehensive platform for users to realize their DeFi ambitions. As the DeFi space evolves, SyncSwap stands at the forefront, enabling users to seamlessly swap assets and embrace the future of decentralized finance.</p>\n              </div>\n            </div>\n            \n            \n            \n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "u18SNwtQXp",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
